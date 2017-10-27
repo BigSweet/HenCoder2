@@ -25,9 +25,8 @@ public class Sample10StrokeJoinView extends View {
     }
 
     {
-        paint.setStrokeWidth(40);
+        paint.setStrokeWidth(20);
         paint.setStyle(Paint.Style.STROKE);
-
         path.rLineTo(200, 0);
         path.rLineTo(-160, 120);
     }
@@ -38,15 +37,15 @@ public class Sample10StrokeJoinView extends View {
 
         canvas.save();
 
-        canvas.translate(100, 100);
+        canvas.translate(10, 100);
         paint.setStrokeJoin(Paint.Join.MITER);
         canvas.drawPath(path, paint);
 
-        canvas.translate(300, 0);
+        canvas.translate(240, 0);
         paint.setStrokeJoin(Paint.Join.BEVEL);
         canvas.drawPath(path, paint);
 
-        canvas.translate(300, 0);
+        canvas.translate(220, 0);
         paint.setStrokeJoin(Paint.Join.ROUND);
         canvas.drawPath(path, paint);
 

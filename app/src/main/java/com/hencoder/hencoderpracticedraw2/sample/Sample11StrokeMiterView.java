@@ -38,15 +38,15 @@ public class Sample11StrokeMiterView extends View {
 
         canvas.save();
 
-        canvas.translate(100, 100);
+        canvas.translate(10, 100);
         paint.setStrokeMiter(1);
         canvas.drawPath(path, paint);
 
-        canvas.translate(300, 0);
+        canvas.translate(240, 0);
         paint.setStrokeMiter(3);
         canvas.drawPath(path, paint);
 
-        canvas.translate(300, 0);
+        canvas.translate(220, 0);
         paint.setStrokeMiter(5);
         canvas.drawPath(path, paint);
 
